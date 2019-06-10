@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.recoder.medibox">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="약집"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <!-- Adtivity -->
+        <activity android:name=".B_Select_Add_Method"
+            android:theme="@style/Transparent"></activity>
+        <activity android:name=".F_Setting"
+            android:theme="@style/popupTheme" android:screenOrientation="unspecified"></activity>
+        <activity android:name=".D_Popup"
+            android:theme="@style/popupTheme" android:screenOrientation="unspecified"></activity>
+        <activity android:name=".B_Popup_NoBarcode"
+            android:theme="@style/popupTheme" android:screenOrientation="unspecified"></activity>
+        <activity android:name=".C_Nolist_Popup"
+            android:theme="@style/popupTheme" android:screenOrientation="unspecified"></activity>
+        <activity android:name=".B_List_Medicine_Detail"></activity>
+        <activity android:name=".C_Name_List"></activity>
+        <activity android:name=".B_Edit_Info"></activity>
+        <activity android:name=".C_Shape"></activity>
+        <activity android:name=".C_Shape_List"></activity>
+        <activity android:name=".C_Direct"></activity>
+        <activity android:name=".D_SearchResult"></activity>
+        <activity android:name=".C_Name"></activity>
+        <activity android:name=".B_List_Medicine"></activity>
+
+        <activity android:name=".A_Network_Check">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <!--- 허가/권한 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+
+</manifest>

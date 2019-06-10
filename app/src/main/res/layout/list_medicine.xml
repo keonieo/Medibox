@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/MyToolbar"
+        android:background="?attr/colorPrimaryDark" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/tv_list_isempty"
+        android:textSize="20dp"
+        android:gravity = "center"
+        android:text = "\n\n\n보유 의약품 목록이 존재하지 않습니다\n\n\n상단의 +버튼을 눌러 의약품을 추가해보세요~"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearlayout_list_notempty"
+        >
+
+        <TextView
+            android:id="@+id/tv_tag_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="사진"
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/tv_tag_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="이름 효능"
+            android:textSize="23dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#e0e0e0"
+        android:id = "@+id/view_list_notempty"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id = "@+id/listview_list_notempty" >
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:choiceMode="singleChoice" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,1204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".C_Shape">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        android:theme="@style/MyToolbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="약의 모양을 보고 아래의 정보를 기입해 주세요."
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp" />
+
+    <View
+        android:id="@+id/view16"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#e0e0e0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="#00D3A8A8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:gravity="center_vertical"
+                    android:text="앞면글자"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/etfront"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="25dp"
+                    android:hint="선택사항입니다"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:gravity="center_vertical"
+                    android:text="뒷면글자"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/etback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="25dp"
+                    android:hint="선택사항입니다"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fadeScrollbars="false"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/innerboxshape"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="7"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:layout_weight="10"
+                            android:text="약 모양 선택"
+                            android:textSize="22dp" />
+
+                        <CheckBox
+                            android:id="@+id/cbwholeshape"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_weight="13"
+                            android:checked="false"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:text="모양전체선택"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+                        android:layerType="software"
+                        android:src="@drawable/drawable_dash_line" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:fadeScrollbars="false"
+                        android:isScrollContainer="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbshape01"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivshape01"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbshape02"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivshape02"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbshape03"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivshape03"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbshape04"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivshape04"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbshape05"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivshape05"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbshape06"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivshape06"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbshape07"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivshape07"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbshape08"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivshape08"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbshape09"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivshape09"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbshape10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivshape10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbshape11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivshape11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbetcshape"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivetcshape"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <View
+                        android:id="@+id/view7"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view13"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/innerboxshape"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/view4"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:layout_weight="10"
+                            android:text="약 색깔 선택"
+                            android:textSize="22dp" />
+
+                        <CheckBox
+                            android:id="@+id/cbwholecolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="13"
+                            android:checked="false"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:text="색깔전체선택"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="5"
+                        android:layerType="software"
+                        android:src="@drawable/drawable_dash_line" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:fadeScrollbars="false"
+                        android:isScrollContainer="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbwhite"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivwhite"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbyellow"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivyellow"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cborange"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivorange"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbpink"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivpink"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbred"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivred"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbbrown"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivbrown"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbygreen"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivygreen"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbgreen"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivgreen"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbbgreen"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivbgreen"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbblue"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivblue"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbnavy"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivnavy"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbwine"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivwine"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbpurple"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivpurple"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbgrey"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivgrey"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbblack"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivblack"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/cbtransp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:checked="false"
+                                    android:clickable="true"
+                                    android:focusable="false" />
+
+                                <ImageButton
+                                    android:id="@+id/ivtransp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <View
+                        android:id="@+id/view8"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view11"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/innerboxshape"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/view5"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:layout_weight="10"
+                            android:text="약 제형 선택"
+                            android:textSize="22dp" />
+
+                        <CheckBox
+                            android:id="@+id/cbwholetype"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="13"
+                            android:checked="false"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:text="제형전체선택"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="5"
+                        android:layerType="software"
+                        android:src="@drawable/drawable_dash_line" />
+
+                    <View
+                        android:id="@+id/view9"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/cbtype01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:clickable="true"
+                                android:focusable="false" />
+
+                            <ImageButton
+                                android:id="@+id/ivtype01"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/cbtype02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:text="경질캡슐"
+                                android:textColor="@android:color/transparent" />
+
+                            <ImageButton
+                                android:id="@+id/ivtype02"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/cbtype03"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:text="연질캡슐"
+                                android:textColor="@android:color/transparent" />
+
+                            <ImageButton
+                                android:id="@+id/ivtype03"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/cbetctype"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:text="etc"
+                                android:textColor="@android:color/transparent" />
+
+                            <ImageButton
+                                android:id="@+id/ivetctype"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view12"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/innerboxshape"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/view6"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="25dp"
+                            android:layout_weight="10"
+                            android:text="약 분할선 선택"
+                            android:textSize="22dp" />
+
+                        <CheckBox
+                            android:id="@+id/cbwholeline"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="13"
+                            android:checked="false"
+                            android:clickable="true"
+                            android:focusable="false"
+                            android:text="분할선전체선택"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="5"
+                        android:layerType="software"
+                        android:src="@drawable/drawable_dash_line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/cbno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:text="no"
+                                android:textColor="@android:color/transparent" />
+
+                            <ImageButton
+                                android:id="@+id/ivno"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/cbplus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:text="plus"
+                                android:textColor="@android:color/transparent" />
+
+                            <ImageButton
+                                android:id="@+id/ivplus"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/cbminus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:text="minus"
+                                android:textColor="@android:color/transparent" />
+
+                            <ImageButton
+                                android:id="@+id/ivminus"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/cbetcline"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="false"
+                                android:clickable="true"
+                                android:focusable="false" />
+
+                            <ImageButton
+                                android:id="@+id/ivetcline"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view10"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_weight="5" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btOK"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="3"
+        android:background="@drawable/buttonboxshape"
+        android:text="검색"
+        android:textSize="20dp" />
+
+</LinearLayout>
